@@ -11,7 +11,7 @@ const params = {
     return Math.floor(largura / this.blockSize)
   },
   quantDeLinhas() {
-    const alturaTotal = Dimensions.get('screen').width
+    const alturaTotal = Dimensions.get('screen').height
     const alturaTabuleiro = alturaTotal * (1 - this.headerRatio)
     return Math.floor(alturaTabuleiro / this.blockSize)
   }

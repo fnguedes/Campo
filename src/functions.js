@@ -31,9 +31,17 @@ const spreadMines = (board, minesAmount) => {
 }
 
 const createMineBoard = (rows, columns, minesAmount) => {
-    const board = createBoard(rows,columns)
+    const board = createBoard(rows, columns)
     spreadMines(board, minesAmount)
     return board
+}
+
+const cloneBoard = board => {
+    return board.map((rows) => {
+        return rows.map(field => {
+            return { ...field }
+        })
+    })
 }
 
 export { createMineBoard }
