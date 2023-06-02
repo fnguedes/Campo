@@ -4,7 +4,7 @@ import params from './src/params'
 import Field from './src/components/Field'
 import { Component } from 'react';
 import MineField from './src/components/MineField';
-import { createMineBoard, cloneBoard, hadExplosion, openField, showMines, wonGame, invertFlag } from './src/functions';
+import { createMineBoard, cloneBoard, hadExplosion, openField, showMines, wonGame, invertFlag, flagUsed } from './src/functions';
 
 export default class App extends Component {
 
